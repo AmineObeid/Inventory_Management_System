@@ -25,6 +25,7 @@ This application allows you to manage an inventory with different roles and perm
    - `edit_item(item_id, name=None, qty=None, price=None, category=None)`: Edits an existing item by its ID.
    - `delete_item(item_id)`: Deletes an item by its ID.
    - `find_item(name=None, status=None, min_price=None, max_price=None, min_quantity=None, max_quantity=None, category=None)`: Finds details of items by specifying the attributes wanting to be matched.
+   - `natural_language_search(query)`: Uses NLP and Regex in order to allow natural language queries about the inventory, could be used by any user as it is similar to `find_item()`.
 
 ### 4. **Log Out**
    - Use the `logout()` method to log out of the current session. Once logged out, you will not be able to perform any actions until you log in again.
